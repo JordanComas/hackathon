@@ -1,23 +1,23 @@
-import logo from './logo.svg';
-import './App.css';
+import "./App.css";
+import { Routes, Route, Link } from "react-router-dom";
+import AboutUs from "./componenet/AboutUs";
+import Contact from "./componenet/Contact";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <h1>
-        We here cooking
-        </h1>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
+    <div>
+      <header>
+        <h1>Hackathon Restaraunt</h1>
+        <nav className="navbar">
+          <Link to="/">About Us</Link>
+          <Link to="/contact">Contact</Link>
+        </nav>
       </header>
+
+      <Routes>
+        <Route path="/" element={<AboutUs />} />
+        <Route path="/contact" element={<Contact />} />
+      </Routes>
     </div>
   );
 }
