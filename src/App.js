@@ -1,3 +1,13 @@
+
+import logo from './logo.svg';
+import './App.css';
+import RecipeDetails from './component/RecipeDetails';
+
+function App() {
+  return (
+    <div className="App">
+    <RecipeDetails/>
+
 import "./App.css";
 import Main from "./component/Main";
 import { Routes, Route, Link } from "react-router-dom";
@@ -12,6 +22,7 @@ function App() {
         <Route path="/about" element={<AboutUs />} />
         <Route path="/contact" element={<Contact />} />
       </Routes>
+
     </div>
   );
 }
