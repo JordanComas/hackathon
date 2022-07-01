@@ -4,7 +4,7 @@ import Password from "./Password";
 
 const Main = () => {
   return (
-    <div>
+    <div className="login">
       <Login />
       <Password placeholder="Password" />
     </div>
