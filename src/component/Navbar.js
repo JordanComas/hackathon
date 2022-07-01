@@ -13,6 +13,10 @@ const Navbar = () => {
           <Link className="links" to="/contact">
             Contact
           </Link>
+          <Link className="links" to="/RecipeDetails">
+            Recipe
+          </Link>
+
         </nav>
       </header>
     </div>
