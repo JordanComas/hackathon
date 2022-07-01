@@ -1,8 +1,10 @@
 import React from "react";
+import Navbar from "./Navbar";
 
 const Contact = () => {
   return (
-    <div>
+    <div className="contact">
+      <Navbar />
       <h2>
         Our phone number is: <a href="tel:305-766-6884">(123)-456-7890 </a>
       </h2>

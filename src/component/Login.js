@@ -15,7 +15,7 @@ const Login = (props) => {
       ></input>
       <p>
         {props.placeholder}
-        {!text.length ? " Missing " : ""}
+        {!text.length ? " Missing username " : ""}
       </p>
     </div>
   );

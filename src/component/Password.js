@@ -5,10 +5,6 @@ import { Link } from "react-router-dom";
 const Password = (props) => {
   const [text, setText] = React.useState("");
 
-  let login = () => {
-    <Link to="/"></Link>;
-  };
-
   return (
     <div>
       <h2>Password</h2>
@@ -22,9 +18,9 @@ const Password = (props) => {
         {props.placeholder}
         {text.length < 6 ? " is too short!" : " is perfect, let's eat!"}
       </p>
-      <button type="submit" onClick={login}>
-        Enter Page
-      </button>
+      <Link to="/about">
+        <button type="submit">Enter Page</button>
+      </Link>
     </div>
   );
 };

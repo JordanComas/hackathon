@@ -1,9 +1,12 @@
 import React from "react";
+import { Routes, Route, Link } from "react-router-dom";
+import Navbar from "./Navbar";
 
 const AboutUs = () => {
   return (
-    <div className="aboutus">
-      <p>
+    <div>
+      <Navbar />
+      <p className="paragraph">
         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin hendrerit
         a nisi ac tincidunt. Cras gravida urna vel elementum euismod. Vestibulum
         et consequat dui. Nulla id justo quis risus pharetra aliquet. Fusce

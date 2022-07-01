@@ -1,11 +1,35 @@
-
 body {
   margin: 0;
 }
 
 .navbar {
   display: flex;
+  justify-content: center;
+  align-items: center;
+  /* position: fixed; */
+  flex-direction: column;
+  background-color: aliceblue;
+  width: 100%;
+}
+
+.navitems a {
+  /* display: flex; */
   flex-direction: row;
   justify-content: center;
   align-items: center;
+  color: blue;
+  text-decoration: none;
+  font-weight: bold;
+  margin: 0 2vw 0 1vw;
+}
+.navitems a:hover {
+  color: red;
+}
+
+.paragraph {
+  display: flex;
+  flex-direction: column;
+  width: 300px;
+  padding-top: 200px;
+  padding-left: 100px;
 }
